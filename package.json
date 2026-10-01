@@ -1,0 +1,18 @@
+{
+  "name": "dishivo-flipdish-capture",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Flipdish portal screenshot + details capture bot for client requirements",
+  "scripts": {
+    "capture": "node src/capture.js",
+    "capture:reports": "node src/capture-reports.js",
+    "capture:rms": "node src/capture-rms.js",
+    "organize:reports": "node src/organize-reports.js",
+    "postinstall": "npx playwright install chromium"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.7",
+    "playwright": "^1.51.0"
+  }
+}
